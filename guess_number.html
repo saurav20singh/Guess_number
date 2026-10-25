@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess_number</title>
+</head>
+<style>
+    .box1{
+        display: flex;
+         height: 100vh;
+       justify-content: center;
+       text-align: center;
+    
+    }
+    .box2{
+       background-color: skyblue;
+       height: 600px;
+       min-width: 600px;
+       border: 2px solid; 
+       padding: 20px;
+       
+    }
+    .box3{
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+    .message1{
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 200;
+        border: 2px solid black;
+    }
+    button{
+        background-color: #663399;
+        color: white;
+        width: 160px;
+        padding: 15px 0;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+</style>
+<body>
+    <div class="box1">
+    <div class="box2">
+        <h3>I am thinking of a number between 1-100 
+    <br>Can you guess it.</h3>
+        
+        <input class="message1" type="number" placeholder="Num"id="guess"><br>
+        <button onclick="play()" id="my_btn">GUESS</button>
+        
+        <p id="message2">No. of Guesses: 0</p>
+        <p id="message3">Guessed Numbers are : None</p>
+        <p id="message4"></p>
+    </div>
+    </div>
+    <script src="guess_number.js"></script>
+</body>
+</html>
